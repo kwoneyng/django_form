@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}아티클::Article{% endblock title %}
+
+{% block body %}
+<h1>{{ article.title}}</h1>
+<p>{{article.created_at}} </p>
+<hr>
+<a href="{% url 'articles:index' %}">[Back]</a>
+{% endblock body %}
